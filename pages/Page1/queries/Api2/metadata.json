@@ -33,9 +33,7 @@
           }
         },
         "projection": {
-          "data": [
-            "Nombre del indicador"
-          ]
+          "data": []
         },
         "queryFormat": {
           "data": "ROWS"
@@ -44,7 +42,7 @@
           "data": ""
         },
         "sheetName": {
-          "data": "Descripción indicadores"
+          "data": "Indicadores"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/1p7fVOfvluWDHRZzRiDrANZRz9C89SZ2caxx5E6a8Ds8/edit"
@@ -68,9 +66,9 @@
             "condition": "AND",
             "children": [
               {
-                "condition": "NOT_EQ",
-                "key": "Nombre del indicador",
-                "value": "\"\""
+                "condition": "EQ",
+                "key": "Subproceso",
+                "value": "{{Select1.selectedOptionValue}}"
               }
             ]
           }
@@ -78,11 +76,17 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.where.data.children[0].value"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Select1.selectedOptionValue"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

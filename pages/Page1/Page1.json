@@ -33,7 +33,9 @@
               "name": "Api1",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "Select1.selectedOptionLabel"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -41,7 +43,9 @@
               "name": "Api2",
               "confirmBeforeExecute": false,
               "pluginType": "SAAS",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "Select1.selectedOptionValue"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
