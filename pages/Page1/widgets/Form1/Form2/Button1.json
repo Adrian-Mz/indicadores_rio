@@ -4,7 +4,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 14,
     "widgetName": "Button1",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonColor": "#ef4444",
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [
@@ -21,10 +21,7 @@
     "parentColumnSpace": 7.8170318603515625,
     "dynamicTriggerPathList": [],
     "leftColumn": 17,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
+    "dynamicBindingPathList": [{"key": "borderRadius"}],
     "text": "Calcular",
     "isDisabled": false,
     "key": "ax4xvobr6t",
