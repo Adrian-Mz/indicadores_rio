@@ -9,10 +9,11 @@
     "leftColumn": 2,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "label"}
     ],
     "labelStyle": "",
-    "inputType": "TEXT",
+    "inputType": "NUMBER",
     "placeholderText": "Ingrese valor 1",
     "isDisabled": false,
     "isRequired": false,
@@ -51,7 +52,7 @@
     "rightColumn": 22,
     "widgetId": "ms1ad6v6ms",
     "minWidth": 450,
-    "label": "Variable 1",
+    "label": "{{\n  Array.from(new Set(Api2.data.map(obj => obj['Nombre del indicador'])))\n    .map(uniqueLabel => ({ 'label': uniqueLabel, 'value': uniqueLabel }))\n}}",
     "parentId": "1c0g2l0m9t",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
@@ -59,6 +60,7 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 2,
     "maxDynamicHeight": 9000,
+    "shouldAllowAutofill": false,
     "iconAlign": "left",
     "defaultText": "",
     "minDynamicHeight": 4

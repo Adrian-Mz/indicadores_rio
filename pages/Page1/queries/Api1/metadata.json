@@ -33,9 +33,7 @@
           }
         },
         "projection": {
-          "data": [
-            "Subproceso"
-          ]
+          "data": []
         },
         "queryFormat": {
           "data": "ROWS"
@@ -56,7 +54,7 @@
           "data": [
             {
               "column": "Subproceso",
-              "order": "Ascending"
+              "order": "Descending"
             }
           ]
         },

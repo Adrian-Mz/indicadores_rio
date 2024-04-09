@@ -34,6 +34,7 @@
         },
         "projection": {
           "data": [
+            "Nombre del indicador",
             "Forma de cálculo"
           ]
         },
@@ -68,9 +69,19 @@
             "condition": "AND",
             "children": [
               {
+                "condition": "NOT_EQ",
+                "key": "Nombre del indicador",
+                "value": "\"\""
+              },
+              {
+                "key": "Forma de cálculo",
+                "condition": "NOT_EQ",
+                "value": "\"\""
+              },
+              {
+                "key": "Nombre del indicador",
                 "condition": "EQ",
-                "key": "Subproceso",
-                "value": "Nombre del indicador"
+                "value": "{{Select2.selectedOptionValue}}"
               }
             ]
           }
@@ -78,18 +89,24 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.where.data.children[2].value"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Select2.selectedOptionValue"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-04-09T17:45:00Z"
+    "createdAt": "2024-04-09T18:18:20Z"
   },
   "id": "Page1_Api3",
   "deleted": false,
-  "gitSyncId": "66157984af144a4cad8dc31e_66157e9cf624ef3d79b451a7"
+  "gitSyncId": "66157984af144a4cad8dc31e_6615866cf624ef3d79b45242"
 }

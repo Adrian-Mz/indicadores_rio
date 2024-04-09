@@ -8,8 +8,8 @@
     "displayName": "Form",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e17c486a34778f3bae299c9110e00cf6.svg",
     "searchTags": ["group"],
-    "topRow": 23,
-    "bottomRow": 33,
+    "topRow": 22,
+    "bottomRow": 32,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -78,10 +78,10 @@
     "isLoading": false,
     "mobileTopRow": 4,
     "responsiveBehavior": "fill",
-    "originalTopRow": 23,
+    "originalTopRow": 22,
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 31,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 33,
+    "originalBottomRow": 32,
     "minDynamicHeight": 10
 }
